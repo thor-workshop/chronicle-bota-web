@@ -17,6 +17,9 @@ export function Privacy() {
           <section key={s.title}>
             <h2>{s.title}</h2>
             <p className="dim">{s.body}</p>
+            {s.link && (
+              <p className="contact-address"><a href={s.link.href}>{s.link.label}</a></p>
+            )}
           </section>
         ))}
         <section>

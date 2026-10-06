@@ -24,9 +24,10 @@ npm run preview -- --port 4180
 
 ## 공개
 
-초기 소스는 `develop` 브랜치에 올립니다. GitHub Pages 게시 승인은 따로 확인합니다.
+공개 주소는 https://thor-workshop.github.io/chronicle-bota-web/ 입니다.
+`develop`에는 개발 원본, `master`에는 게시한 판을 보관합니다. 새로운 게시 작업은 사용자의 승인 범위를 확인한 뒤 진행합니다.
 Pages 워크플로는 `master`에 올리거나 승인 후 직접 실행할 때 작동합니다.
-개인정보 문서의 검토 날짜와 호스팅 안내는 실제 게시 전에 갱신합니다.
+개인정보 문서에는 2026년 10월 6일 시행일과 GitHub Pages의 호스팅 안내를 반영했습니다.
 
 ## 문구와 이미지
 

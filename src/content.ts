@@ -106,7 +106,7 @@ export const CAPTIONS = {
 }
 
 export const PRIVACY = {
-  date: '검토본 · 2026년 10월 6일',
+  date: '시행일 · 2026년 10월 6일',
   lead: '게임은 개인정보를 수집하거나 외부로 전송하지 않습니다.',
   description: 'Chronicle: Breach of the Abyss의 개인정보 수집 여부, 기기 저장과 사용 권한을 안내합니다.',
   sections: [
@@ -114,7 +114,14 @@ export const PRIVACY = {
     { title: '기기 저장', body: '설정, 플레이 기록과 이어 할 판은 기기에 저장합니다. 게임이 이 데이터를 개발자에게 전송하는 기능은 없습니다.' },
     { title: '사용 권한', body: 'Android에서는 전투와 조작의 진동 효과에 진동 권한을 사용합니다. 카메라, 마이크와 사진 보관함에 접근하지 않습니다.' },
     { title: '어린이의 정보', body: '게임은 어린이를 포함한 모든 이용자의 개인정보를 수집하지 않습니다.' },
-    { title: '소개 사이트', body: '소개 사이트에는 계정, 쿠키나 이용 분석 도구가 없습니다. 현재 검토본은 로컬에서 제공하며, 공개 시에는 호스팅 서비스의 개인정보 처리 안내를 이 문서에 반영합니다.' },
+    {
+      title: '소개 사이트',
+      body: '소개 사이트에는 계정 기능이 없으며 쿠키나 이용 분석 도구를 사용하지 않습니다. 사이트를 제공하는 GitHub는 보안 목적으로 방문자의 IP 주소를 기록하고 보관합니다.',
+      link: {
+        label: 'GitHub 개인정보처리방침',
+        href: 'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement',
+      },
+    },
     { title: '내용 변경', body: '개인정보 처리 방식이 바뀌면 이 페이지에 변경 내용과 적용 날짜를 안내합니다.' },
   ],
   contactTitle: '문의',
