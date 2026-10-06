@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 var(--fs-body) / 1.5 var(--font);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+h1, h2, h3, b, strong { font-weight: 400; }
+img, svg { image-rendering: pixelated; }
+a { color: var(--text-accent); text-underline-offset: 4px; }
+a:focus-visible, button:focus-visible { outline: var(--hairline) solid var(--warning); outline-offset: var(--px); }
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 16px; }
+.prose { max-width: var(--prose); }
+.dim { color: var(--text-dim); }
+.kw { color: var(--text-accent); }
+.number { color: var(--text-number); }
+.status-text { color: var(--text-danger); }
+.caption { font-size: var(--fs-caption); }
+
+/* 모서리는 둥글리지 않고 45도로 깎는다 */
+.chamfer { clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px); }
+
+/* 깊이는 흐림 없는 베벨로만 그린다 */
+.panel {
+  background: var(--panel);
+  box-shadow: inset 2px 2px 0 0 var(--bevel-hi), inset -2px -2px 0 0 var(--bevel-sh);
+  padding: var(--sp-l);
+}
+.sunken {
+  background: var(--bg);
+  box-shadow: inset 2px 2px 0 0 var(--bevel-sh), inset -2px -2px 0 0 var(--bevel-hi);
+}
+
+.skip { position: absolute; left: -9999px; top: 0; }
+.skip:focus { left: 16px; top: 8px; z-index: 20; background: var(--warning); color: var(--bg); padding: var(--sp-s) var(--sp-m); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  html { scroll-behavior: auto; }
+}

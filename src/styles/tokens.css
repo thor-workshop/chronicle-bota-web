@@ -1,0 +1,46 @@
+/* 색은 게임 UI(scripts/ui/ui_colors.gd)에서 가져온다. 게임 색이 바뀌면 같이 고친다.
+   격자와 글꼴 크기, 깊이를 그리는 법은 N-EMU 사이트의 원칙을 따른다. 도트 한 칸은 CSS 2px이다. */
+:root {
+  --bg: #15111e;
+  --panel: #241d36;
+  --raised: #332a4b;
+  --bevel-hi: #4d4470;
+  --bevel-sh: #0b0812;
+
+  --text: #ebe8f4;
+  --text-dim: #9990b8;
+  --text-accent: #a3b8ff;
+  --text-number: #ffd78a;
+  --text-danger: #f28a95;
+
+  --accent: #6f8ff7;
+  --warning: #f5b336;
+  --rift: #ad58ec;
+
+  --px: 2px;
+  --sp-xs: 4px;
+  --sp-s: 8px;
+  --sp-m: 12px;
+  --sp-l: 20px;
+  --sp-xl: 32px;
+  --hairline: 2px;
+  --touch-target: 44px;
+
+  --wrap: 1080px;
+  --prose: 840px;
+
+  --fs-display: 72px;
+  --fs-title: 48px;
+  --fs-heading: 36px;
+  --fs-body: 24px;
+  --fs-caption: 12px;
+
+  --font: 'Galmuri11', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+@media (max-width: 900px) {
+  :root { --fs-display: 48px; --fs-title: 36px; --fs-heading: 24px; }
+}
+@media (max-width: 640px) {
+  :root { --fs-display: 36px; --fs-title: 24px; --fs-heading: 24px; }
+}

@@ -1,0 +1,7 @@
+/* npm run subset-fonts 가 사이트 글자만 남긴 Galmuri11. 원본 라이선스는 public/licenses 에 있다. */
+@font-face {
+  font-family: 'Galmuri11';
+  src: url('../fonts/Galmuri11.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
